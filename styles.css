@@ -1,3 +1,35 @@
+#cart {
+    width: 400px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  #cart h2 {
+    margin-top: 0;
+  }
+  
+  #cart-items {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #cart-items li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  #cart-items li:last-child {
+    border-bottom: none;
+  }
+  
+  #cart-items li:before {
+    content: "•";
+    margin-right: 5px;
+  }
+  
   #add-item-form label {
     display: block;
     margin-bottom: 5px;
