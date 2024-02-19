@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    </head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <main id="items" class="col-sm-8 row"></main>
+            <aside class="col-sm-4">
+                
+                <div class="card col-sm-4">
+                    <div class="card-body"><img class="img-fluid produt-img" src="https://cdn.pixabay.com/photo/2017/05/02/06/46/potato-2277455_1280.jpg">
+                        <h5 class="card-title">Papa</h5>
+                        <p class="card-text">1500$</p><button data-precio="1500" class="btn btn-primary" marcador="1">+</button>
+                    </div>
+                    <div class="card-body"><img class="img-fluid produt-img" src="https://cdn.pixabay.com/photo/2016/08/03/01/13/onion-1565604_1280.jpg">
+                        <h5 class="card-title">Cebolla cabezona</h5>
+                        <p class="card-text">700$</p><button data-precio="700" class="btn btn-primary" marcador="2">+</button>
+                    </div>
+                    <div class="card-body"><img class="img-fluid produt-img" src="https://cdn.pixabay.com/photo/2018/04/29/11/54/strawberries-3359755_1280.jpg">
+                        <h5 class="card-title">Fresas</h5>
+                        <p class="card-text">2600$</p><button data-precio="2600" class="btn btn-primary" marcador="3">+</button>
+                    </div>
+                </div>
+                <h2>Carrito</h2>
+                <ul id="carrito" class="list-group">
+                    <li class="list-group-item" marcador="1"><span class="numero">0</span> x Papa - 1500$ <button data-precio="1500" class="btn-delete btn btn-danger" marcador="1">X</button></li>
+                    <li class="list-group-item" marcador="2"><span class="numero">1</span> x Cebolla cabezona - 700$ <button data-precio="700" class="btn-delete btn btn-danger" marcador="2">X</button></li>
+                    <li class="list-group-item" marcador="3"><span class="numero">2</span> x Fresas - 2600$ <button data-precio="2600" class="btn-delete btn btn-danger" marcador="3">X</button></li>
+                </ul>
+                <hr>
+                <p class="text-right">Total: <span id="total">0</span>.00$</p>
+            </aside>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
